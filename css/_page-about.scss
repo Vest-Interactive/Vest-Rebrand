@@ -1,0 +1,71 @@
+.instagram-block {
+	img { width: 100%; 
+		vertical-align: top;
+	}
+
+	[class^="col-"] {
+		padding: 0;
+	}
+
+	.row {
+		margin: 0;
+	}
+
+	p {
+		font-size: 16px;
+		padding: 0 15px;
+	}
+}
+
+.map {
+	p {
+		font-size: 14px;
+	}
+
+	ul {
+		list-style-type: none;
+		font-family: $secondaryFont;
+		color: $copyColor;
+		margin-top: 0;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	.address-gmap {
+		color: inherit;
+		font-family: $secondaryFont;
+		line-height: 24px;
+		.block {
+
+		}
+	}
+
+	.hours {
+		text-align: right;
+	}
+}
+
+.map-wrapper {
+
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	//max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+
+	#map_canvas {
+		display: block;
+
+		h2 {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 13px;
+    	line-height: 18px;
+		}
+	}
+}

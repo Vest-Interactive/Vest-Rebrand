@@ -1,0 +1,354 @@
+@import "normalize";
+@import "grids";
+@import "vendor";
+
+@import "fonts";
+@import "typography";
+@import "animation";
+
+@import "global";
+@import 'template-usecase';
+@import 'template-index';
+@import 'template-service';
+
+@import 'page-about';
+
+//Smooth State Transitions between pages
+#main {
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+}
+#main.is-exiting {
+	opacity: 0;
+}
+
+button {
+	outline: none;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+.table {
+	display: table;
+	width: 100%;
+	//height: 100%;
+
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+
+	}
+}
+
+.hide-scroll-bar {
+	overflow: hidden;
+	transition: all 0.5s ease-out;
+}
+
+
+/*
+	Site Navigation
+ */
+.nav-hamburger {
+	position: absolute;
+	right: 20px;
+	top:20px;
+	color: #fff;
+	z-index: 9;
+}
+
+.site-nav-btn-wrapper {
+	position: relative;
+}
+
+#site-nav-btn {
+	button {
+    background-color: transparent;
+    border: none;
+	}
+}
+
+.site-navigation {
+
+	.site-navigation-block {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background-image: url(/images/nav-bg1.jpg);
+		background-size: cover;
+		background-position: center center;
+		overflow: hidden;
+		z-index: -1;
+		transition: all 0.2s ease-in-out;
+		opacity: 0;		
+	}
+
+	.table {
+		height: 100%;
+	}
+
+	.site-navigation-block.active {
+		opacity: 1;
+		z-index: 2;
+
+		.site-logo {
+			margin-left: -5px;
+		}
+	}
+
+	ol {
+		list-style-type: none;
+		text-align: center;
+		font-size: 36px;
+		color: #fff;
+		font-family: 'Avenir LT Std 35 Light';
+
+		li {
+			margin-bottom: 40px;
+			opacity: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.nav-list-footer {
+			padding-top: 30px;
+			display: block;
+			font-size: 16px;
+		}
+	}
+}
+
+
+// Each Page Header
+.site-logo {
+	position: absolute;
+	z-index: 2;
+	@media screen and (max-width: 992px) {
+		width: 96px;
+	}
+}
+
+.site-header {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	min-height: 500px;
+	@media screen and (max-width: 992px) {
+		height: 400px;
+	}
+}
+
+.site-header {
+	.icon-arrow-down {
+		@media screen and (max-width: 992px) {
+			//display: none;
+		}
+	}
+}
+
+header {
+	transition: all .5s ease-in-out;
+}
+
+
+
+
+/* SITE WIDE FOOTER */
+.site-footer {
+	background-color: #262626;
+	overflow: hidden;
+
+	.new-business-block {
+		position: relative;
+		height: 377px;
+		background-color: #c80e26;
+	}
+
+	.new-business, .about-us-footer {
+		position: absolute;
+		top:50%;
+		margin-top:-100px;
+		width: 100%;
+		text-align:center;
+		font-family: 'Avenir LT Std 35 Light';
+		color: #fff;
+
+		.nb-title {
+			font-family: 'Avenir LT Std 95 Black';
+			text-transform: uppercase;
+			margin-top: 20px;
+			margin-bottom:20px;
+		}
+
+		.phone {
+			margin-bottom:5px;
+		}
+
+		a, p {
+			display: inline-block;
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+
+
+	.new-employee-block {
+		position: relative;
+		height: 377px;
+		background-color: #605f5f;
+	}
+
+
+	.company-info-block {
+		margin-top:68px;
+		height: 500px;
+		color: #fff;
+		font-family: 'Avenir LT Std 35 Light';
+		font-size:21px;
+
+		@media screen and (max-width: 768px) {
+			height: 100%;
+			text-align: center;
+		}
+
+		.social-links {
+			margin: 35px 0;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+
+			a:nth-child(n+2) {
+				margin-left: 30px;
+			}
+		}
+
+		.address { 
+			display: block;
+			span{
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+		}
+		.add-prop { 
+			margin-bottom: 10px; 
+			display: block;
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+
+	.service-line-block {
+		margin-top: 68px;
+		text-align: right;
+		@media screen and (max-width: 768px) {
+			text-align: center;
+
+		}
+
+
+		ul {
+			display: block;
+			margin-bottom: 30px;
+			font-size:18px;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+    	font-family: 'Avenir LT Std 45 Book';
+    	overflow: hidden;
+   	 clear: both;
+    	li {
+    		span {
+			    height: 47px;
+			    line-height: 34px;
+			    vertical-align: middle;
+			    font-size: 18px;
+			    display: inline-block;
+    		}
+    		img {
+    			height: 30px;
+    		}
+    		a {
+    			text-decoration: none;
+    			color: #fff;
+    			margin-right: 10px;
+    			@media screen and (max-width: 768px) {
+						border-bottom: 1px dotted #fff;
+  				}
+
+    			&:hover {
+    				border-bottom: 1px dotted #fff;
+    			}
+    		}
+    	}
+		}
+	}
+
+.women-owned {
+		margin-top: 25px;
+	}
+}
+
+
+.about-us-footer {
+	text-align: center;
+	//left: 0;
+
+	.about-us-icon {
+		max-width: 88px;
+		margin: 0 auto;
+		width: 88px;
+	}
+
+}
+
+.block {
+	display: block;
+}
+
+
+
+
+
+
+
+//print
+
+@media print {
+	.site-header {
+		height: 100px !important;
+		//min-height: 0 !important;
+	}
+	.icon-arrow-down {
+		display: none;
+	}
+	.cover-image {
+		//display: none;
+	}
+
+	h1 {
+		font-size: 16px !important;
+	}
+	h3 {
+		font-size: 14px !important;
+	}
+	p {
+		font-size: 10px !important;
+	}
+
+	.service img {
+		width: 50px;
+	}
+
+	section {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}

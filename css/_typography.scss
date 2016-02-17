@@ -1,0 +1,46 @@
+html {
+
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	//font-size: 2rem;
+}
+
+$pageTitleColor: #fff;
+$titleColor: #000;
+//$copyColor: #1e1e1e;
+$copyColor: #444;
+$red: #c80d25;
+
+$secondaryFont : 'libre_baskervilleregular';
+
+
+h1 {
+	font-family: 'Avenir LT Std 65 Medium';
+	color: $pageTitleColor;
+	font-size: 65px;
+	font-size: 5.1vw;
+	letter-spacing: 0.15em;
+}
+
+h2 {
+	font-family: 'Avenir LT Std 35 Light';
+	color: $titleColor;
+	font-size: 39px;
+	//font-size: 2.3vw;
+	letter-spacing: 0.15em;
+}
+
+p {
+	font-family: 'libre_baskervilleregular';
+	font-size: 22px;
+	line-height: 32px;
+	color: $copyColor;
+}
+
+.red {
+	color: $red;
+}
