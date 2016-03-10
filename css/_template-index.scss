@@ -1,18 +1,88 @@
-
 .site-header {
-	//background-color: grey;
 
-	//.table {
 	.fadeIn-img{
 		background-color: #565656;
 	}
+
+	.index-caption p{
+		color: #fff;
+		font-size: 36px;
+		line-height: 40px;
+		font-family: 'Avenir LT Std 45 Book';
+	}
+
+	h1 {
+		font-family: 'Avenir LT Std 65 Medium';
+		color: $pageTitleColor;
+		font-size: 65px;
+		font-size: 5.1vw;
+		letter-spacing: 0.15em;
+	}
+}
+
+
+
+// logos
+.brand-logos {
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 0;
+	margin-right: 0;
+
+	.bf, .gop {
+		img { margin-top: 30px; }
+	}
+
+	ul.logo-block {
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			width: 100%;
+			max-width: 150px;
+			margin-left: 15px;
+		}
+	}
+}
+
+.logo-wrap {
+	text-align: center;
+	margin-bottom: 20px;
+	img { 
+		width: 100%;
+		max-height: 100px;
+		@media screen and (max-width: 992px) {
+			width: 180px;
+		}
+	}
+}
+
+
+
+.earth-bg {
+	background: #fafafa url('../images/earth.png');
+	background-image-repeat: no-repeat;
+	background-repeat: no-repeat;
+  background-position: 70% 100px;
 }
 
 section.service-lines {
-	margin-top: 40px;
+	padding-top: 40px;
+
+	h1 { text-align: center; text-transform: uppercase;}
 
 	.service-line-block {
 		padding-bottom: 80px;
+
+		.white-bg {
+			background-color: #fff;
+		}
+
+		.service-line-grid {
+			padding: 30px;
+		}
 	}
 
 	.service {
@@ -24,12 +94,6 @@ section.service-lines {
 	}
 
 	.title-description {
-		text-align: center;
-		max-width: 480px;
-		margin: 0 auto;
-		padding: 0;
-		font-size: 16px;
-		font-family: 'libre_baskervilleregular';
 		margin-bottom: 80px;
 	}
 
@@ -67,12 +131,28 @@ section.service-lines {
 	margin-top: 10px;
 }
 
+
+
 .case-studies {
+	position: relative;
+  padding-bottom: 20px;
+
+	.cs-title {
+		p { 
+			font-size: 24px; 
+			font-style: none;
+			color: #fff;
+			font-family: 'Avenir LT Std 45 Book';
+		}
+	}
+
 	.thumb {
 		min-height: 460px;
 		background-size: cover;
 		background-position: center center;
 		text-align: center;
+
+		h2 { text-transform: uppercase; }
 	}
 
 	blockquote {
@@ -89,11 +169,19 @@ section.service-lines {
 	}
 
 	.section-description {
+		padding-top: 80px;
 		margin-bottom: 40px;
-	}
+		text-align: center;
 
-	h2 {
-		text-transform: uppercase;
+		h1 {
+			font-size: 62px;
+	    text-shadow: 1px 2px 0 #3E3E3E;
+	    margin-bottom: 20px;
+		}
+
+		blockquote {
+			color: #fff;
+		}
 	}
 }
 
@@ -108,32 +196,207 @@ section.service-lines {
 
 
 
+// Section Titles
+.section-title-block {
+	text-align: center;
 
-// LOGO SEction
+	h1 {
+		//text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,.75);
+	}
 
-.brand-logos {
-	overflow: hidden;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	margin-left: 0;
-	margin-right: 0;
 
-	.bf, .gop {
-		img { margin-top: 30px; }
+	.title-description {
+		font-family: $primaryFont-light;
+		max-width: 600px;
+		margin: 0 auto;
 	}
 }
 
-.logo-wrap {
-	text-align: center;
-	margin-bottom: 20px;
-	img { 
-		width: 100%;
-		max-height: 100px;
-		@media screen and (max-width: 992px) {
-			width: 180px;
+
+/////////////////// Industry List
+section.main-industry-block {
+	overflow: hidden;
+	clear: both;
+	//background-color: $bg-red;
+	padding: 100px 0;
+
+	background: $bg-red url('../images/dark-denim-3.png');
+}
+
+.industry-commercial-container {
+	margin: 75px 0;
+}
+.industry-commercial-list {
+	list-style-type: none;
+
+	li, img, p {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		width: 62px;
+		display: inline-block;
+		    margin: 10px;
+	}
+
+	img { margin: 0 auto; text-align: center; display: block;}
+
+	p { 
+		text-align: center;
+		color: #fff;
+		font-family: $primaryFont-heavy;
+		padding-top: 15px;
+		font-size: 1em;
+		font-weight: 700;
+	}
+
+	.e-com { width: 100px; }
+	.enterprise { width: 100px; }
+	.education { width: 100px; }
+	.non-profit { width: 100px; }
+
+}
+
+
+
+
+//// Approach
+.approach-list-container {
+	position: relative;
+	margin-top: 35px;
+
+	.bar {
+		position: absolute;
+		margin: 0 auto;
+		width: 400px;
+		height: 15px;
+		background-color: #dbdbdb;
+	}
+
+}
+
+#approach-list {
+	width: 500px;
+	margin: 0 auto;
+
+	li {
+		display: inline-block;
+		position: relative;
+		background-color: #fff;
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		border: 4px solid #dbdbdb;
+    margin-left: 26px;
+
+		span {
+			position: absolute;
+			left: 8px;
+			top: 4px;
+			color: #000;
 		}
 	}
+
+	li.active {
+		background-color: #c80e25;
+
+		span {
+			color: #fff;
+		}
+	}
+
+	&:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 15px;
+    content: "";
+    background: #d5d5d5;
+    background: -moz-linear-gradient(top, #d5d5d5 0, #dedede 10%, #e5e5e5 14%, #f1f1f1 29%, #f6f6f6 38%, #f8f8f8 48%, #f8f8f8 81%, #f6f6f6 90%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d5d5d5), color-stop(10%, #dedede), color-stop(14%, #e5e5e5), color-stop(29%, #f1f1f1), color-stop(38%, #f6f6f6), color-stop(48%, #f8f8f8), color-stop(81%, #f8f8f8), color-stop(90%, #f6f6f6), color-stop(100%, #f1f1f1));
+    background: -webkit-linear-gradient(top, #d5d5d5 0, #dedede 10%, #e5e5e5 14%, #f1f1f1 29%, #f6f6f6 38%, #f8f8f8 48%, #f8f8f8 81%, #f6f6f6 90%, #f1f1f1 100%);
+    background: -ms-linear-gradient(top, #d5d5d5 0, #dedede 10%, #e5e5e5 14%, #f1f1f1 29%, #f6f6f6 38%, #f8f8f8 48%, #f8f8f8 81%, #f6f6f6 90%, #f1f1f1 100%);
+    background: linear-gradient(to bottom, #d5d5d5 0, #dedede 10%, #e5e5e5 14%, #f1f1f1 29%, #f6f6f6 38%, #f8f8f8 48%, #f8f8f8 81%, #f6f6f6 90%, #f1f1f1 100%);
+    z-index: 0;
+	}
 }
+
+.approach-tab {
+	display: none;
+}
+
+#approach-description {
+	max-width: 650px;
+	padding: 0 15px;
+	clear: both;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+
+	.approach-title h3{
+		font-size: 42px;
+		font-family: $primaryFont-heavy;
+		color: #4e6385;
+		border-bottom: 1px dotted #4e6385;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.description {
+		font-family: $primaryFont-light;
+	}
+
+
+	.active {
+		display: block;
+	}
+
+	.column-1, .column-2 {
+		float: left;
+	}
+	.column-1 {
+		width: 25%;
+	}
+	.column-2 {
+		width: 65%;
+	}
+}
+
+
+
+
+
+
+
+
+
+/////////////////////// Generic
+
+.arrow-down-circle {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: #fafafa;
+	top: -80px;
+	left: 50%;
+	margin-left: -75px;
+	border-radius: 50%;
+	z-index: 2;
+
+	img {
+    position: absolute;
+    top: 60px;
+    left: 16px;
+	}
+}
+
 
 
 //Responsive

@@ -15,16 +15,20 @@ $titleColor: #000;
 $copyColor: #444;
 $red: #c80d25;
 
+$titleFont : 'Adelle';
+$primaryFont-light: 'Avenir LT Std 35 Light';
+$primaryFont-medium: 'Avenir LT Std 65 Medium';
+$primaryFont-heavy: 'Avenir LT Std 85 Heavy';
 $secondaryFont : 'libre_baskervilleregular';
 
 
-h1 {
-	font-family: 'Avenir LT Std 65 Medium';
-	color: $pageTitleColor;
-	font-size: 65px;
-	font-size: 5.1vw;
-	letter-spacing: 0.15em;
-}
+// h1 {
+// 	font-family: 'Avenir LT Std 65 Medium';
+// 	color: $pageTitleColor;
+// 	font-size: 65px;
+// 	font-size: 5.1vw;
+// 	letter-spacing: 0.15em;
+// }
 
 h2 {
 	font-family: 'Avenir LT Std 35 Light';

@@ -79,6 +79,61 @@ function components($) {
 	});
 
 
+	/*
+		Approach Details
+	*/
+
+	var approachList = [
+		{ 
+			name: 'Listen',
+			description: 'It begins with listening to our clients, listening to the data, listening to the audience.  All campaigns are research when you listen to the data.',
+		},
+		{
+			name: 'Mine',
+			description: 'Moving people is about understanding people.  We believe data is only as good as the insights that come from it.'	
+		},
+		{
+			name: 'Plan',
+			description: 'A good plan maximizes every team touching a project.  A good plan allows every team member to focus on their best work.'
+		},
+		{
+			name: 'Craft',
+			description: 'The pretty part of the business.  Crafting the creative is the process of aligning client goals and fan desires.  Connecting brands to local communities.'
+		},
+		{
+			name: 'Strengthen',
+			description: 'Changes are challenges.  Testing reveals bugs, proofing reveals flubs, and review, whether internal or from our client teams, is a challenge to tighten up and make the work even more powerful.'
+		},
+		{
+			name: 'Launch',
+			description: 'Whether earned, owned or paid, our media is not just about the right place at the right time.  It’s about listening and reacting to every result.'
+		},
+		{
+			name: 'Repeat',
+			description: 'Every campaign, every day, every moment is an opportunity to adjust and maximize impact.  The key is to remember to start over and LISTEN.'
+		}
+	];
+
+	var currentApproach = 1;
+	var $list = $('#approach-list li');
+
+	// Handle Events for Approach Section
+	$('#approach-list li').on('click', function() {
+		var stepNum = $(this).data('step');
+		
+		$('.approach-tab').css('display', 'none');
+
+		$('.approach-tab-'+stepNum).fadeIn();
+		
+		$('#approach-list li').removeClass('active');
+
+
+		for (var x=0; x<=stepNum; x++) {			
+		//	console.log($list[x]);
+			$($list[x]).addClass('active');
+		}
+		
+	});
 
 
 }
