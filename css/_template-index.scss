@@ -69,7 +69,8 @@
 }
 
 section.service-lines {
-	padding-top: 40px;
+	padding: 100px 0;
+	position: relative;
 
 	h1 { text-align: center; text-transform: uppercase;}
 
@@ -135,13 +136,19 @@ section.service-lines {
 
 .case-studies {
 	position: relative;
-  padding-bottom: 20px;
+  padding: 100px 0;
 
 	.cs-title {
+
+		h1 {
+			color: #fff;
+			//text-transform: uppercase;
+		}
 		p { 
 			font-size: 24px; 
 			font-style: none;
-			color: #fff;
+			//color: #fff;
+			color: #C7C7C7;
 			font-family: 'Avenir LT Std 45 Book';
 		}
 	}
@@ -169,8 +176,8 @@ section.service-lines {
 	}
 
 	.section-description {
-		padding-top: 80px;
-		margin-bottom: 40px;
+		//padding-top: 80px;
+		//margin-bottom: 40px;
 		text-align: center;
 
 		h1 {
@@ -263,6 +270,10 @@ section.main-industry-block {
 
 
 //// Approach
+.step-approach {
+	padding: 100px 0;
+}
+
 .approach-list-container {
 	position: relative;
 	margin-top: 35px;
@@ -290,17 +301,25 @@ section.main-industry-block {
 		border-radius: 50%;
 		border: 4px solid #dbdbdb;
     margin-left: 26px;
+    transition: 0.3s ease-in;
+
+    &:hover {
+    	cursor: pointer;
+    	background-color: #f7f7f7;
+    }
 
 		span {
 			position: absolute;
-			left: 8px;
+			left: 9px;
 			top: 4px;
 			color: #000;
+			//transition: 0.3s ease-in;
 		}
 	}
 
 	li.active {
-		background-color: #c80e25;
+		//background-color: #c80e25;
+		background: -webkit-linear-gradient(top, #E81731 0%, #C80E25 100%);
 
 		span {
 			color: #fff;
@@ -342,7 +361,7 @@ section.main-industry-block {
 	.approach-title h3{
 		font-size: 42px;
 		font-family: $primaryFont-heavy;
-		color: #4e6385;
+		color: #9B081B;
 		border-bottom: 1px dotted #4e6385;
 		display: inline-block;
 		padding: 0;

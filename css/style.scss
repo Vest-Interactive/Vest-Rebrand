@@ -82,7 +82,7 @@ button {
 		overflow: hidden;
 		z-index: -1;
 		transition: all 0.2s ease-in-out;
-		opacity: 0;		
+		//opacity: 0;		
 	}
 
 	.table {
@@ -98,16 +98,42 @@ button {
 		}
 	}
 
+	// left service side with address ....
+	.nav-service-list { 
+		font-family: $primaryFont-heavy; 
+		font-size: 42px;
+		line-height: 62px;
+	}
+
+	.services-title span {
+		font-family: $primaryFont-medium;
+		color: #fff;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #fff;
+	}
+
+	// right page side with social icons.....
+	.nav-page-list {
+		font-family: $secondaryFont;
+		li { font-size: 58px; line-height: 80px;}
+	}
+
+
+
+
+	// generic
 	ol {
 		list-style-type: none;
-		text-align: center;
+		//text-align: center;
 		font-size: 36px;
 		color: #fff;
-		font-family: 'Avenir LT Std 35 Light';
+		font-family: 'Avenir LT Std 35 Light';	
+		overflow: hidden;
+		clear: both;
 
 		li {
-			margin-bottom: 40px;
-			opacity: 0;
+			//margin-bottom: 40px;
+			//opacity: 0;
 		}
 
 		a {
@@ -121,7 +147,75 @@ button {
 			font-size: 16px;
 		}
 	}
+
+	.copyright {
+		margin-top: 55px;
+		font-family: $primaryFont-light;
+		color: #fff;
+		font-size: 0.8em;
+	}
+
+	.column {
+		width: 50%;
+	}
 }
+
+.white-dash {
+	width: 100px;
+	height: 1px;
+	background-color: #fff;
+	float: right;
+}
+
+.social-nav {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	padding-top: 25px;
+
+	a svg {
+		margin-left: 15px;
+		display: inline-block;
+		width: 52px;
+		height: 52px;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			path {
+				fill: #9B081B;
+			}
+		}
+	}
+}
+
+// nav address
+.nav-address {
+	margin-top: 25px; 
+	overflow: hidden;
+	clear: both;
+
+	.marker-block, .address-block {
+		display: inline-block;
+	}
+
+	.marker-block img {
+		padding-bottom: 15px;
+	}
+
+	.address-block p{
+		color: #fff;
+		font-family: $secondaryFont;
+		font-size: 12px;
+		line-height: 1;
+		margin-left: 15px;
+	}
+}
+
+
+
+
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 
 // Each Page Header
@@ -202,7 +296,6 @@ header {
 		height: 377px;
 		background-color: #605f5f;
 	}
-
 
 	.company-info-block {
 		margin-top:68px;
@@ -306,8 +399,57 @@ header {
 		margin: 0 auto;
 		width: 88px;
 	}
+}
+
+// Social Media Footer Row
+.social-footer-block {
+	background-color: #3e3e3e;
+	min-height: 200px;
+	height: 100%;
+	
+	.icon-block { text-align: center; }
+
+	.social-wrap {
+		margin-top: 55px;
+	}
+		
+	img {
+		width: 85px;
+		height: 85px;
+	}
+
+	.action-copy {
+    display: inline-block;
+    height: 85px;
+    /* float: right; */
+    line-height: 85px;
+    vertical-align: top;
+    font-family: $primaryFont-heavy;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+			display: none;	
+		}
+
+    &:hover {
+    	text-decoration: underline;
+    }
+	}
+
+	.fb {
+		color: #3d6aab;
+	}
+	.li {
+		color: #346d91;
+	}
+	.twitter {
+		color: #40A2F7;
+	}
 
 }
+
 
 .block {
 	display: block;
@@ -339,18 +481,30 @@ header {
 
 // primary -buttons
 .primary-btn {
-		display: inline-block;
-    min-width: 300px;
-    height: 60px;
-    line-height: 60px;
+  background: -webkit-linear-gradient(top, #4BE85E 0%, #37C76A 100%);
+  background: -moz-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+  background: -o-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+  background: linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+  background: -ms-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6aa50', endColorstr='#e5933f',GradientType=0 );
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  border: 1px solid #21982B;
+
+
+
+
+		    display: inline-block;
+    min-width: 260px;
+    height: 56px;
+    line-height: 53px;
     text-align: center;
-    vertical-align: middle;    
+    vertical-align: middle;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    font-family: $secondaryFont;
-    font-size: 24px;
+    font-family: $primaryFont-heavy;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -366,7 +520,31 @@ header {
 	border-bottom-left-radius: 40px;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
+}
 
+.work-btn {
+	background: -webkit-linear-gradient(top, #4BA0E8 0%, #2A7D90 100%);
+    background: -moz-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+    background: -o-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+    background: linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+    background: -ms-linear-gradient(top, #f6aa50 0%, #e5933f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6aa50', endColorstr='#e5933f',GradientType=0 );
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+    border: 1px solid #2C83AD;
+    display: inline-block;
+    min-width: 260px;
+    height: 56px;
+    line-height: 53px;
+    text-align: center;
+    vertical-align: middle;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: "Avenir LT Std 85 Heavy";
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
 }
 
 
@@ -379,15 +557,25 @@ header {
 	text-align: center;
 	overflow: hidden;
 	clear: both;
-	background-color: #2b3547;
+	//background-color: #2b3547;
 
 	h3 {
-		color: #fff;
+		color: #d3d3d3;
 		font-size: 2em;
 		font-family: $secondaryFont;
+
+		span {
+			//color: 
+		}
 	}
 }
 
+.blue-banner {
+	background-color: #2b3547;
+}
+.navy-blue-banner {
+	background-color: $bg-navyblue;
+}
 
 
 

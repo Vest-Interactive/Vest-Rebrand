@@ -33,14 +33,14 @@ function menu($) {
 			$bodyEl.addClass('hide-scroll-bar');
 			$siteNavBlockEl.addClass('active');
 
-			// fadeIndown nav-list elements
-			let time = 200;
-			$navListEl.each( function() {
-				setTimeout( () => {
-						$(this).addClass('fadeInDown');
-					}, time);
-				time += 150;
-			});
+			// // fadeIndown nav-list elements
+			// let time = 200;
+			// $navListEl.each( function() {
+			// 	setTimeout( () => {
+			// 			$(this).addClass('fadeInDown');
+			// 		}, time);
+			// 	time += 150;
+			// });
 		} else {
 
 		 	var s = new Snap('#MobileMenuIcon line.tbar');
