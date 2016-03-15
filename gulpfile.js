@@ -64,7 +64,10 @@ gulp.task('html',function() {
   //gulp.src('html/*.html')
     .pipe(gulp.dest('./build/'))
     .pipe(reload({stream:true}))
-})
+  gulp.src('html/*.html')
+    .pipe(gulp.dest('./build/'))
+    .pipe(reload({stream:true}))
+});
 
 /*
   Browser Sync

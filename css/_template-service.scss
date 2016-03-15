@@ -173,6 +173,15 @@ $prColor: #008D73;
 	.creative path, .creative polygon { fill: $d-orange;	}
 	.creative .link { color: $d-orange; }
 
+	.interactive path, .interactive polygon { fill: $i-blue; }
+	.interactive .link { color: $i-blue; }
+
+	.video path, .video polygon { fill: $v-purple; }
+	.video .link { color: $v-purple; }
+
+	.promotion path, .promotion polygon { fill: $p-green; }
+	.promotion .link { color: $p-green; }
+
 	h2 {
 		font-size: 1.6em;
 		margin: 0;
