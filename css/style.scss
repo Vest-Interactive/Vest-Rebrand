@@ -585,7 +585,7 @@ header {
 
 	.header { position: relative;}
 
-	.logo {
+	.nav-logo {
 		float: left;
 	}
 
@@ -629,10 +629,13 @@ header {
 		.phone-number, .address-header {
 			display: block;
 			line-height: 50px;
-			height: 50px;
-
+			height: 50px;	
+			text-align: right;
+			width: 50%;		
 			strong { display: none;}
-
+		}
+		.address-header {
+			line-height: 1.5;
 		}
 	}
 
