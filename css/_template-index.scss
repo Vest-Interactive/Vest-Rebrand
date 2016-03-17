@@ -140,6 +140,7 @@ section.service-lines {
   padding: 100px 0;
 
 	.cs-title {
+		text-align: left;
 
 		h1 {
 			color: #fff;
@@ -314,6 +315,7 @@ section.main-industry-block {
 			left: 9px;
 			top: 4px;
 			color: #000;
+			font-family: $secondaryFont;
 			//transition: 0.3s ease-in;
 		}
 	}

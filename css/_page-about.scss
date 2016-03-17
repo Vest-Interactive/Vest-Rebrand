@@ -1,3 +1,69 @@
+
+article {
+	background-color: #fff;
+}
+
+.about-page {
+	.copy-block {
+		max-width: 768px;
+		margin: 0 auto;
+		padding: 0 15px;
+
+		p {
+			font-size: 18px;
+			line-height: 32px;
+			color: #444;
+		}
+
+		.service-header-table { z-index: 2;}
+	}
+
+	.our-story {
+		padding: 40px 0;
+	}
+	.our-niche {
+		overflow: hidden;
+		padding-bottom: 40px;
+	}
+
+	ul {
+			position: relative;
+			padding: 0; 
+			max-width: 400px;
+			margin: 0 auto;
+			font-family: $primaryFont-light;
+			margin-top: 35px;
+
+			li {
+				padding-left: 35px;
+				padding-bottom: 25px;
+				position: relative;
+
+				&:before {
+					content: "o";
+					display: inline-block;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					position: absolute;
+					top: -6px;
+					font-size: 1.5em;
+					color: #39CA68;
+					left: 0;
+				}
+			}
+		}
+
+	.title {
+		font-family: $primaryFont-light;
+		font-size: 3em;
+		text-transform: uppercase;
+	}
+
+
+}
+
 .instagram-block {
 	img { width: 100%; 
 		vertical-align: top;

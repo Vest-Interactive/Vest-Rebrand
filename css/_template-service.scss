@@ -1,5 +1,5 @@
 
-$serverHeaderHeight : 400px;
+$serverHeaderHeight : 200px;
 
 $creativeColor: #DD7D00;
 $interactiveColor: #06648C;
@@ -18,7 +18,7 @@ $prColor: #008D73;
 		color: #fff;
 	}
 	blockquote {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.line {
@@ -66,7 +66,7 @@ $prColor: #008D73;
     position: absolute;
     top: 0;
     left: 0;
-    height: 400px;
+    height: $serverHeaderHeight;
     z-index: 1;
 }
 
@@ -92,7 +92,13 @@ $prColor: #008D73;
 				text-align: left;
 			}
 		}
+
+
 	}
+
+	.case-studies {
+			padding: 60px 0;
+		}
 
 	// for Video
 	.cover-image {
@@ -104,7 +110,7 @@ $prColor: #008D73;
 // Top About Section
 .service-about-block {
 	position: relative;
-	padding: 60px 0;
+	//padding: 60px 0;
 	background: url(../images/bg-creative-top.jpg) 50% 0 no-repeat #fbfbfb;
 
 	.table {
@@ -112,8 +118,14 @@ $prColor: #008D73;
 	}
 
 	.top-section {
-		max-width: 700px;
+		max-width: 1000px;
 		margin: 0 auto;
+
+		p {
+			font-size: 1em;
+		}
+
+
 	}
 
 	.column-left {
@@ -132,6 +144,7 @@ $prColor: #008D73;
 	}
 	
 	.bg {
+		padding: 60px 0;
 		background-repeat: no-repeat;
 		background-position: 90% 31px;
 
@@ -150,7 +163,11 @@ $prColor: #008D73;
 .service-about-block.creative {
 	.bg {
 		background-image: url('../images/top-section-creative.jpg');
+		background-position: 70% 100px;
+	}
 
+	p {
+		width: 75%;
 	}
 }
 
@@ -159,6 +176,36 @@ $prColor: #008D73;
 .service-capabilities-list {	
 	background-color: #F5F5F5;
 	padding: 60px 0;
+	position: relative;
+
+	.arrow-down {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -45px;
+
+    &:before {
+			content: '';
+	    width: 65px;
+	    height: 65px;
+	    position: absolute;
+	    background-color: #F5F5F5;
+	    border-radius: 50%;
+	    left: 3px;
+	    top: 2px;
+    }
+	}
+
+	.icon-chevron-down {
+    position: absolute;
+    top: 16px;
+    left: 19px;
+    font-size: 2em;
+	}
 
 	.icon {
 		height: 100%;
@@ -170,11 +217,13 @@ $prColor: #008D73;
 		}
 	}
 
+
+
 	.creative path, .creative polygon { fill: $d-orange;	}
-	.creative .link { color: $d-orange; }
+	.creative .link{ color: $d-orange; }
 
 	.interactive path, .interactive polygon { fill: $i-blue; }
-	.interactive .link { color: $i-blue; }
+	.interactive .link{ color: $i-blue; }
 
 	.video path, .video polygon { fill: $v-purple; }
 	.video .link { color: $v-purple; }
@@ -193,14 +242,15 @@ $prColor: #008D73;
 		padding-left: 35px;
 		padding-right: 35px;
 		p {
-			font-size: 1em;
+			font-size: 0.9em;
 			padding: 0;
 			margin: 0;
+			    line-height: 24px;
 		}
 	}
 
 	.col {
-		padding: 20px 0;
+		padding: 25px 0;
 	}
 
 	.clearfix {
@@ -328,3 +378,18 @@ $prColor: #008D73;
     width: 100%;
     min-width: 712px;
 }
+
+// Design Video
+.design {
+	video {
+		bottom: -120px;
+	}
+}
+
+
+
+
+
+
+
+
