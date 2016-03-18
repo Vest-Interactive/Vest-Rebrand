@@ -51,6 +51,14 @@
 /*
 	Main Sections
 */
+.use-case {
+	h1 {
+		font-family: $primaryFont-light;
+		text-transform: uppercase;
+	}
+}
+
+
 .use-case, .home-page {
 
 	section {
@@ -66,7 +74,8 @@
 			// text-transform: uppercase;
 			// margin-bottom: 60px;
 			// font-weight: 100;
-			font-family: 'Avenir LT Std 55 Roman';
+			//font-family: 'Avenir LT Std 55 Roman';
+			text-align: center;
 		}
 
 		.copy-block {
@@ -75,7 +84,7 @@
 			margin: 50px auto;
 
 			p {
-				font-family: 'libre_baskervilleregular';
+				font-family: $secondaryFont;
 				font-size: 18px;
 				line-height: 32px;
 				color: $copyColor;
