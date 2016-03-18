@@ -114,4 +114,36 @@
 
 
 
+// Mouse Scroll Down
+@keyframes scroll {
+  0% {
+    top: 16px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 16px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    top: 16px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 16px;
+  }
+}
+
+
+
+
 

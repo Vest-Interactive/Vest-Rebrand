@@ -1,7 +1,12 @@
 .site-header {
+	position: relative;
 
 	.fadeIn-img{
 		background-color: #565656;
+	}
+
+	.cover-image {
+		z-index: -1;
 	}
 
 	.index-caption p{
@@ -15,9 +20,34 @@
 		font-family: 'Avenir LT Std 65 Medium';
 		color: $pageTitleColor;
 		font-size: 65px;
-		font-size: 5.1vw;
+		font-size: 6vw;
 		letter-spacing: 0.15em;
+		text-align: center;
 	}
+
+	.guide-scroll {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -28px;
+
+		.mouse-line {
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 10px;
+			width: 2px;
+			height: 8px;
+			background-color: #fff;
+			margin-left: -1px;
+		}
+
+		.mouse-line {
+			animation: scroll 1s;
+			animation-iteration-count: infinite;
+		}
+	}
+
 }
 
 
@@ -131,6 +161,7 @@ section.service-lines {
 
 .case-studies-block {
 	margin-top: 10px;
+	max-width: 760px;
 }
 
 
@@ -140,7 +171,7 @@ section.service-lines {
   padding: 100px 0;
 
 	.cs-title {
-		text-align: left;
+		text-align: center;
 
 		h1 {
 			color: #fff;
