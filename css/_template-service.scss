@@ -162,7 +162,40 @@ $prColor: #008D73;
 
 .service-about-block.creative {
 	.bg {
-		background-image: url('../images/top-section-creative.jpg');
+		background-image: url('../images/top-section-creative.png');
+		background-position: 70% 100px;
+	}
+
+	p {
+		width: 75%;
+	}
+}
+
+.service-about-block.interactive {
+	.bg {
+		background-image: url('../images/top-section-interactive.png');
+		background-position: 70% 100px;
+	}
+
+	p {
+		width: 75%;
+	}
+}
+
+.service-about-block.video {
+	.bg {
+		background-image: url('../images/top-section-video.png');
+		background-position: 70% 100px;
+	}
+
+	p {
+		width: 75%;
+	}
+}
+
+.service-about-block.promotion {
+	.bg {
+		background-image: url('../images/top-section-promotion.png');
 		background-position: 70% 100px;
 	}
 
