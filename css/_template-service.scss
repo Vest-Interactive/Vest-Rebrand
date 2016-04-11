@@ -1,6 +1,4 @@
-
 $serverHeaderHeight : 200px;
-
 $creativeColor: #DD7D00;
 $interactiveColor: #06648C;
 $mediaColor: #561085;
@@ -8,11 +6,9 @@ $prColor: #008D73;
 
 .service-header {
 	//height: $serverHeaderHeight;
-	
-	.cover-image {
+		.cover-image {
 		height: $serverHeaderHeight;
 	}
-
 	h1 {
 		font-size: 3rem;
 		color: #fff;
@@ -20,7 +16,6 @@ $prColor: #008D73;
 	blockquote {
 		font-size: 1rem;
 	}
-
 	.line {
 		height: 1px;
 		background-color: #fff;
@@ -28,7 +23,6 @@ $prColor: #008D73;
 		width: 20%;
 		display: block;
 	}
-
 	.title-block {
 		h1 {
 			text-transform: uppercase;
@@ -39,11 +33,9 @@ $prColor: #008D73;
 			color: #fff;
 		}
 	}
-	
-	.service-line-list {
+		.service-line-list {
 		background-color: #fafafa;
 		.list-wrapper { max-width: 500px; margin: 0 auto;}
-
 		.service {
 			text-align: center;
 			padding: 10px 0;
@@ -59,7 +51,6 @@ $prColor: #008D73;
 			.service {  opacity: 0.3;}
 			.service.active { opacity: 1;}
 	}
-
 }
 
 .service-header-table {
@@ -71,14 +62,11 @@ $prColor: #008D73;
 }
 
 .service-page {
-
 	section { 
 		//margin: 60px 0;
 	}
-
 	.title {
 		margin-bottom: 40px;
-
 		h2 { 
 			text-transform:uppercase; 
 			font-size: 2rem;
@@ -87,123 +75,94 @@ $prColor: #008D73;
 			font-family: 'libre_baskervilleitalic';
 			line-height: 47px;
 			color: #A9A9A9;
-
 			@media screen and (max-width: 768px) {
 				text-align: left;
 			}
 		}
-
-
 	}
-
 	.case-studies {
 			padding: 60px 0;
 		}
-
 	// for Video
 	.cover-image {
 		background: transparent;
 	}
-
 }
 
 // Top About Section
 .service-about-block {
 	position: relative;
-	//padding: 60px 0;
-	background: url(../images/bg-creative-top.jpg) 50% 0 no-repeat #fbfbfb;
-
+    background: url(../images/section-bg-design.jpg) 50% 0 no-repeat #fbfbfb;
+    background-size: cover;
+    background-attachment: scroll;
 	.table {
 		min-height: 400px;
-	}
-
-	.top-section {
-		max-width: 1000px;
-		margin: 0 auto;
-
+        .top-section {
+            max-width: 60%;
+            margin: 0 auto;
+        }
 		p {
 			font-size: 1em;
 		}
-
-
 	}
-
 	.column-left {
 		width: 60%;
-		padding-left: 15px;
 		@media screen and (max-width: 768px) {
-			width: 50%;
+			width: 40%;
 		}
 	}
-
 	h1 {
 		font-family: $primaryFont-light;
 		strong {
 			font-family: $primaryFont-heavy;
 		}
 	}
-	
 	.bg {
-		padding: 60px 0;
-		background-repeat: no-repeat;
-		background-position: 90% 31px;
-
-		@media screen and (min-width: 1200px) {
-			background-position: 70% 31px;
-		}
-
-		@media screen and (max-width: 1100px) {
-			background-size: 40%;
-			background-position: 90% 40%;
-		}
+		padding: 60px 50px;
+//      background: url(../images/top-section-creative.png) 70% bottom no-repeat;
+//		background-repeat: no-repeat;
 	}
-
+	p {
+		width: 100%;
+	}
 }
 
 .service-about-block.creative {
-	.bg {
-		background-image: url('../images/top-section-creative.png');
-		background-position: 70% 100px;
-	}
-
-	p {
-		width: 75%;
-	}
+    background: url(../images/section-bg-design.jpg) 50% 0 no-repeat #fbfbfb;
+    background-size: cover;
+    background-attachment: scroll;
 }
-
 .service-about-block.interactive {
-	.bg {
-		background-image: url('../images/top-section-interactive.png');
-		background-position: 70% 100px;
-	}
-
-	p {
-		width: 75%;
-	}
+    background: url(../images/section-bg-interactive.jpg) 50% 0 no-repeat #fbfbfb;
+    background-size: cover;
+    background-attachment: scroll;
 }
-
 .service-about-block.video {
-	.bg {
-		background-image: url('../images/top-section-video.png');
-		background-position: 70% 100px;
-	}
-
-	p {
-		width: 75%;
-	}
+    background: url(../images/section-bg-video.jpg) 50% 0 no-repeat #fbfbfb;
+    background-size: cover;
+    background-attachment: scroll;
 }
-
 .service-about-block.promotion {
-	.bg {
-		background-image: url('../images/top-section-promotion.png');
-		background-position: 70% 100px;
-	}
-
-	p {
-		width: 75%;
-	}
+    background: url(../images/section-bg-promotion.jpg) 50% 0 no-repeat #fbfbfb;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
+//iPhone and iPad
+//@media only screen and (max-device-width : 800px) {
+//    .service-about-block.creative {
+//        background-position: 58% 0;
+//    }
+//    .service-about-block.interactive {
+//        background-position: 58% 0;
+//    }
+//    .service-about-block.video {
+//        background-position: 58% 0;
+//    }
+//    .service-about-block.promotion {
+//        background-position: 58% 0;
+//    }
+//}
 
 // Service About List of Capabilities
 .service-capabilities-list {	
@@ -212,17 +171,18 @@ $prColor: #008D73;
 	position: relative;
 
 	.arrow-down {
-    position: absolute;
-    top: -35px;
-    left: 50%;
-    height: 70px;
-    width: 70px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-left: -45px;
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: -45px;
+        }
 
     &:before {
-			content: '';
+        content: '';
 	    width: 65px;
 	    height: 65px;
 	    position: absolute;
@@ -230,17 +190,17 @@ $prColor: #008D73;
 	    border-radius: 50%;
 	    left: 3px;
 	    top: 2px;
-    }
-	}
+        }
+}
 
-	.icon-chevron-down {
+.icon-chevron-down {
     position: absolute;
     top: 16px;
     left: 19px;
     font-size: 2em;
-	}
+}
 
-	.icon {
+.icon {
 		height: 100%;
 		width: 15%;
 		margin-top: 15px;
@@ -248,53 +208,49 @@ $prColor: #008D73;
 		@media screen and (max-width: 568px) {
 			padding-left: 15px;
 		}
-	}
-
-
-
-	.creative path, .creative polygon { fill: $d-orange;	}
-	.creative .link{ color: $d-orange; }
-
-	.interactive path, .interactive polygon { fill: $i-blue; }
-	.interactive .link{ color: $i-blue; }
-
-	.video path, .video polygon { fill: $v-purple; }
-	.video .link { color: $v-purple; }
-
-	.promotion path, .promotion polygon { fill: $p-green; }
-	.promotion .link { color: $p-green; }
-
-	h2 {
-		font-size: 1.6em;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 12px;
-	}
-
-	.description {
-		width: 85%;
-		padding-left: 35px;
-		padding-right: 35px;
-		p {
-			font-size: 0.9em;
-			padding: 0;
-			margin: 0;
-			    line-height: 24px;
-		}
-	}
-
-	.col {
-		padding: 25px 0;
-	}
-
-	.clearfix {
-		@media screen and (max-width: 767px) {
-			overflow: hidden;		
-			clear: both;
-		}
-	}
 }
 
+.creative path, .creative polygon { fill: $d-orange;	}
+.creative .link{ color: $d-orange; }
+
+.interactive path, .interactive polygon { fill: $i-blue; }
+.interactive .link{ color: $i-blue; }
+
+.video path, .video polygon { fill: $v-purple; }
+.video .link { color: $v-purple; }
+
+.promotion path, .promotion polygon { fill: $p-green; }
+.promotion .link { color: $p-green; }
+
+h2 {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+}
+
+.description {
+    width: 85%;
+    padding-left: 35px;
+    padding-right: 35px;
+    p {
+        font-size: 0.9em;
+        padding: 0;
+        margin: 0;
+            line-height: 24px;
+    }
+}
+
+.col {
+    padding: 25px 0;
+}
+
+.clearfix {
+    @media screen and (max-width: 767px) {
+        overflow: hidden;		
+        clear: both;
+    }
+}
 
 .service-lines-list {
 	background-color: #fefefe;
@@ -357,16 +313,10 @@ $prColor: #008D73;
 	}
 }
 
-
-
-
 // Filter over video
-.cover-image.filter {   
-    z-index: 1;
-}
+.cover-image.filter { z-index: 1; }
 .cover-image.filter.filter-50 { background: rgba(0, 0, 0, 0.5); }
-.cover-image.filter.filter-70 { background: rgba(0,0, 0, .7);}
-
+.cover-image.filter.filter-70 { background: rgba(0, 0, 0, 0.7); }
 
 // Header video
 .homepage-hero-module {
@@ -414,16 +364,6 @@ $prColor: #008D73;
 }
 
 // Design Video
-.design {
-	video {
+.design .video {
 		bottom: -120px;
 	}
-}
-
-
-
-
-
-
-
-

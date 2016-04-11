@@ -179,6 +179,9 @@ button {
 		width: 52px;
 		height: 52px;
 		transition: all 0.3s ease-in-out;
+			path {
+				fill: #21648f;
+			}
 		&:hover {
 			path {
 				fill: #9B081B;
@@ -880,16 +883,6 @@ header {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 // Print
