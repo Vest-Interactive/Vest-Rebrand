@@ -1,6 +1,7 @@
 // Site Componenets
 import menu from './menu'; // site wide menu
-import twitterCarousel from './twitter-carousel'; // twitter footer carousel
+//import twitterCarousel from './twitter-carousel'; // twitter footer carousel
+import testimonialCarousel from './testimonial-carousel';
 
 import h from '../helpers';
 
@@ -19,7 +20,8 @@ function components($) {
 		Component: Twitter Carousel
 		- Fetch Twitter Information and create the Carousel, appendTo
 	*/
-	twitterCarousel($); 
+	//twitterCarousel($); 
+	testimonialCarousel($);
 
 
 	//clear off the navigation overflow
