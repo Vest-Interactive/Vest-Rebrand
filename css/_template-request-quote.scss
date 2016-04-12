@@ -1,0 +1,393 @@
+///////////////// Request A Quote Page
+
+.request-a-quote {
+
+	.header { position: relative;}
+
+	.nav-logo {
+		float: left;
+	}
+
+	.phone-number, .address-header { float: right; }
+	.break {
+		float: right; 
+		line-height: 105px;
+		font-size: 2em;
+		opacity: 0.5;
+		margin-left: 15px;
+		margin-right: 15px;
+		color: #ccc;
+	}
+
+	.phone-number {
+		.fa { font-size: 20px; }
+		a {
+			color: inherit;
+			font-family: $primaryFont-light;
+		}
+	}
+
+	.address-header, .phone-number {
+		height: 112px;
+		line-height: 112px;
+	}
+
+	.address-header {
+		font-family: $primaryFont-light;		
+		display: block;
+
+		strong {
+			font-family: $primaryFont-heavy;
+			text-transform: uppercase;
+		}
+	}
+
+
+	@media screen and (max-width: 645px) {
+		.break { display: none;}
+		.phone-number, .address-header {
+			display: block;
+			line-height: 50px;
+			height: 50px;	
+			text-align: right;
+			width: 50%;		
+			strong { display: none;}
+		}
+		.address-header {
+			line-height: 1.5;
+		}
+	}
+
+	.title {
+		margin-top: 35px;
+		background-color: #FAFAFA;
+		font-family: $primaryFont-light;
+		text-align: center;
+		border-top: 1px solid #EAEAEA;
+
+		h1 {			
+			font-size: 2.5em;
+			color: $red;
+			text-transform: uppercase;
+	    	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+		}
+	}
+
+	.contact-block {
+		background: url(../images/bg-creative-top.jpg) 50% 0 repeat #fbfbfb;
+		padding: 20px;
+    padding-bottom: 100px;
+		overflow: hidden;
+		clear: both;
+		position: relative;
+	}
+
+	.form-container {
+		max-width: 1000px;
+		margin: 0 auto;
+
+		h2 { 
+			font-size: 29px;
+			padding: 0;
+			margin: 0;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+
+		ul.what-you-get {
+			position: relative;
+			padding: 0; margin: 0;
+			font-family: $primaryFont-light;
+
+			li {
+				padding-left: 45px;
+				padding-bottom: 25px;
+				position: relative;
+
+				&:before {
+					content: "\f00c";
+					display: inline-block;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					position: absolute;
+					top: 0;
+					font-size: 1.5em;
+					color: #39CA68;
+					left: 0;
+				}
+			}
+
+		}
+	}
+
+	
+	form {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-radius: 10px;
+    margin-top: 25px;
+    background: #fff;
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    background-color: #F2F2F2;
+    background: #f2f2f2 url('../images/debut-light.png');
+
+		.description {
+			text-align: center;
+			font-family: $primaryFont-light;
+			font-size: 0.9em;
+		}
+	}
+
+	.form-expertise-list {
+		p {
+			font-size: 16px;
+		    display: block;
+    		padding: 5px 0 0 0;
+    		font-family: "Avenir LT Std 65 Medium";
+    		margin: 0;
+		}
+
+		li {
+			padding-bottom: 10px;
+			margin-left: 10px;
+		}
+	}
+
+	.input-row {
+		margin-bottom: 15px;
+	}
+
+	form label {
+		display: block;
+		padding: 5px 0;
+		font-family: $primaryFont-medium;
+	}
+
+	form input[type=text], textarea {
+    height: 45px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #cecece;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0 10px;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	.form-btn {
+		margin: 0 auto;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	//// Right Side of Form
+	.description-block {
+		margin-top: 65px;
+		padding-left: 20px;
+	}
+
+
+	.grey-bar {
+		margin-top: 45px;
+		width: 70%;
+		height: 1px;
+		background-color: #f2f2f2;
+	}
+
+
+	.list-address {
+		margin-top:35px;
+		padding-top: 5px;
+		position: relative;
+		padding-left: 90px;	
+
+		&:before {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			content: "\f041";
+			left: 20px;
+			position: absolute;
+    	font-size: 3em;
+    	color: #BB051B;
+    	top: 44px;
+		}
+
+		&:after {
+			content: '';
+			border-radius: 50%;
+			height: 70px;
+			width: 70px;
+			border: 3px solid;
+			position: absolute;
+			left: -4px;
+			top: 32px;
+			color: #BB051B;
+			opacity: .5;
+		}
+	
+		h3 {
+			padding: 0;
+			margin: 0;
+			padding-top: 20px;
+			font-family: $primaryFont-heavy;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5;
+			font-family: $primaryFont-light;
+			margin: 0;
+			margin-top: 10px;
+		}
+	}
+
+	.list-phone {
+		margin-top: 45px;
+		padding-left: 90px;	
+		position: relative;
+
+		&:before {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+	    content: "\f095";
+			left: 16px;
+			position: absolute;
+    	font-size: 3em;
+    	color: #BB051B;
+    	top: 15px;
+		}
+
+		&:after {
+			content: '';
+			border-radius: 50%;
+			height: 70px;
+			width: 70px;
+			border: 3px solid;
+			position: absolute;
+			left: -4px;
+			top: 0;
+			color: #BB051B;
+			opacity: .5;
+		}
+	
+		h3 {
+			padding: 0;
+			margin: 0;
+			padding-top: 20px;
+			font-family: $primaryFont-heavy;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5;
+			font-family: $primaryFont-light;
+			margin: 0;
+			margin-top: 10px;
+		}
+	}
+
+
+
+
+}
+
+$aquablue: #2194d2;
+$darkblue: #085985;
+
+//$primary-color: #9CA1A7;
+//$secondary-color: #9CA1A7; //rgb(240,139,59);
+$green: #39CA68;
+$dark-green: #42E878;
+$medium-color: rgb(84,103,117);
+
+
+.radio {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+
+  &:hover .inner {
+   // @include transform(scale(.5));
+   	transform: scale(0.5);
+    opacity: .5;
+  }
+  
+  // Native input control and checked events
+  input {
+    //@include size(1px);
+    height: 1px;
+    width: 1px;
+
+    opacity: 0; // Hide input, but leave it available for tabbing
+    &:checked + .outer .inner {
+      //@include transform(scale(1));
+      transform: scale(1,1);
+      opacity: 1;
+    }
+    &:checked + .outer { border: 3px solid $green; }
+    &:focus + .outer .inner {
+      //@include transform(scale(1));
+      transform: scale(1,1);
+      opacity: 1;
+      background-color: darken($dark-green, 10);
+    }
+  }
+  
+  // Outer ring of custom radio
+  .outer {
+    //@include size(28px);
+    width: 28px;
+    height: 28px;
+
+    display: block;
+    float: left;
+    //margin: 10px 9px 10px 10px;
+    border: 3px solid $green;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  // Inner ring of custom radio
+  .inner {
+    //@include transition(all .25s ease-in-out);
+    transition: all 0.25s ease-in-out;
+    width: 16px;
+    height: 16px;
+
+    //@include size(16px);
+    //@include transform(scale(0));
+    transform: scale(0);
+    display: block;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: $dark-green;
+    opacity: 0;
+  }
+}
