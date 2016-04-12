@@ -7,7 +7,13 @@ article {
 	.copy-block {
 		max-width: 768px;
 		margin: 0 auto;
-		padding: 0 15px;
+		padding: 15px;
+        
+        h1 {
+            font-size: 39px;
+            letter-spacing: 0;
+            text-align: center;
+        }
 
 		p {
 			font-size: 18px;
@@ -29,30 +35,33 @@ article {
 	ul {
 			position: relative;
 			padding: 0; 
-			max-width: 400px;
-			margin: 0 auto;
+			width: 90%;
+			margin: 20px auto;
 			font-family: $primaryFont-light;
-			margin-top: 35px;
 
 			li {
-				padding-left: 35px;
-				padding-bottom: 25px;
+				padding: 15px 0 15px 80px;
 				position: relative;
-
-				&:before {
-					content: "o";
-					display: inline-block;
-					font-size: inherit;
-					text-rendering: auto;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
-					position: absolute;
-					top: -6px;
-					font-size: 1.5em;
-					color: #39CA68;
-					left: 0;
-				}
+                width: 80%;
+                font-size: 22px;
+                line-height: 32px;
 			}
+        
+            li.honor {
+				background: url('../images/_icons/shapes.svg') no-repeat left 50%;
+                background-size: 38px;
+            }
+        
+            li.focus {
+				background: url('../images/_icons/weapons.svg') no-repeat left 50%;
+                background-size: 38px;
+                
+            }
+        
+            li.empower {
+				background: url('../images/_icons/silhouette.svg') no-repeat left 50%;
+                background-size: 38px;
+           }
 		}
 
 	.title {
