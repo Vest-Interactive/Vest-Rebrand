@@ -48,7 +48,7 @@ gulp.task('images',function(){
   gulp.src('css/images/**/**')
     .pipe(gulp.dest('./build/images'))
     .pipe(reload({stream:true}))
-  gulp.src('css/images/*/*/*')
+  gulp.src('css/images/**/**/*')
     .pipe(gulp.dest('./build/images'))
     .pipe(reload({stream:true}))
 });
