@@ -221,7 +221,7 @@ $prColor: #008D73;
 .interactive path, .interactive polygon { fill: $i-blue; }
 .interactive .link{ color: $i-blue; }
 
-.video-capabilities path, .video polygon { fill: $v-purple; }
+.video-capabilities path, .video-capabilities  polygon { fill: $v-purple; }
 .video .link { color: $v-purple; }
 
 .promotion path, .promotion polygon { fill: $p-green; }

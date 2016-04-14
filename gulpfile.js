@@ -42,15 +42,15 @@ gulp.task('styles',function() {
   Images
 */
 gulp.task('images',function(){
-  gulp.src('css/images/**')
+  return gulp.src('css/images/**')
     .pipe(gulp.dest('./build/images'))
     .pipe(reload({stream:true}))
-  gulp.src('css/images/**/**')
-    .pipe(gulp.dest('./build/images'))
-    .pipe(reload({stream:true}))
-  gulp.src('css/images/**/**/*')
-    .pipe(gulp.dest('./build/images'))
-    .pipe(reload({stream:true}))
+  // gulp.src('css/images/*/**')
+  //   .pipe(gulp.dest('./build/images'))
+  //   .pipe(reload({stream:true}))
+  // gulp.src('css/images/*/*/**')
+  //   .pipe(gulp.dest('./build/images'))
+  //   .pipe(reload({stream:true}))
 });
 
 gulp.task('videos',function(){
