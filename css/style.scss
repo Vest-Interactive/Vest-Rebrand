@@ -112,6 +112,10 @@ button {
 		color: #fff;
 		padding-bottom: 5px;
 		border-bottom: 1px solid #fff;
+
+		@media screen and (max-width: 1100px) {
+			display: none;
+		}
 	}
 
 	// right page side with social icons.....
@@ -629,19 +633,25 @@ header {
 //Work / Clients Page
 
 .client-gallery {
+	margin: 0 auto;
     margin-bottom: 80px;
+
     
     figure {
-        width: 18%;
+        //width: 18%;
         height: 125px;
-        background-color: #605f5f;
-        border-radius: 20px;
-        margin: 0 15px 25px 0;
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d;
+        margin: 10px 0;
+
     }
     img {
+		height: 125px;
+        background-color: #605f5f;
+        border-radius: 20px;
+        padding: 0 15px;
+
         position: relative;
         top: 50%;
         transform: translateY(-50%);

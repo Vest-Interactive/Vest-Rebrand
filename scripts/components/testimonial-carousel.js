@@ -8,31 +8,36 @@ function Testimonial($) {
 		{
 			quote: 'Creative and unique marketing and design experts.',
 			author: 'Courtney Burge',
-			association: 'Heart Ball Director, American Heart Association'
+			association: 'American Heart Association',
+			title: 'Heart Ball Director'
 		},
 
 		{
 			quote: '5Xs increase on all my social network platforms! I had great experience with VEST! They increased the "Likes" on my Facebook and social platform pages and taught me how to better navigate social media to engage my fans in a better, stronger way. They created a strong plan to increase my brand\'s awareness online. Very pleased!',
 			author: 'Anna Wilson', 
-			association: 'Recording Artist'
+			association: 'Recording Artist',
+			title: ''
 		},
 
 		{
 			quote: 'Vest is best! Their team works hard so you don\'t have to!! The Vest team left no stone unturned in discovery about our business. They are a 5-star team!!',
 			author: 'Pam Carter',
-			association: 'Executive Admin, Main Street Realty, Inc.'
+			association: 'Main Street Realty, Inc.',
+			title: 'Executive Admin'
 		},
 
 		{
 			quote: 'I received a complete professional upgrade with explosive public response! Working with this group of professionals was so easy. We met often to go over progress and the results have been magical. Public response was so fast that I knew the website had gone live before the team could even notify me.',
 			author: 'Tonya Johnson',
-			association: 'Owner, Payne Street Pottery, LLC'
+			association: 'Payne Street Pottery, LLC',
+			title: 'Owner'
 		},
 
 		{
 			quote: 'A creative team that goes above and beyond! The Vest Advertising team is made up of some of the most creative, knowledgeable individuals in the advertising industry. The team brings genius ideas to the table, executes impeccable collateral, and communicates clearly and quickly, all for a price that can\'t be beat. Vest truly goes above and beyond to get to know the client and its needs.',
 			author: '',
-			association: 'Special Olympics Kentucky'
+			association: 'Special Olympics Kentucky',
+			title: ''
 		}
 	];
 

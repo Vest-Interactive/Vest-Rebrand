@@ -5,6 +5,8 @@ import testimonialCarousel from './testimonial-carousel';
 
 import h from '../helpers';
 
+import contact from './contact';
+
 
 function components($) {
 
@@ -22,6 +24,11 @@ function components($) {
 	*/
 	//twitterCarousel($); 
 	testimonialCarousel($);
+
+	/*
+		Component: Contact form and Validation
+	 */
+	contact($);
 
 
 	//clear off the navigation overflow
