@@ -35,7 +35,7 @@ $prColor: #008D73;
 	}
 		.service-line-list {
 		background-color: #fafafa;
-		.list-wrapper { max-width: 500px; margin: 0 auto;}
+		.list-wrapper { max-width: 500px; margin: 0 auto; overflow: hidden;}
 		.service {
 			text-align: center;
 			padding: 10px 0;
@@ -50,6 +50,13 @@ $prColor: #008D73;
 		}
 			.service {  opacity: 0.3;}
 			.service.active { opacity: 1;}
+			.service {
+				p {
+					@media screen and (max-width: 586px) {
+						display: none;
+					}
+				}
+			}
 	}
 }
 
@@ -108,7 +115,8 @@ $prColor: #008D73;
 	.column-left {
 		width: 60%;
 		@media screen and (max-width: 768px) {
-			width: 40%;
+			//width: 40%;
+			width: 80%;
             margin-left: 0;
 		}
         @media screen and (min-width: 1200px) {
@@ -196,6 +204,7 @@ $prColor: #008D73;
 	    left: 3px;
 	    top: 2px;
         }
+
 }
 
 .icon-chevron-down {
@@ -211,6 +220,10 @@ $prColor: #008D73;
 		margin-top: 15px;
 
 		@media screen and (max-width: 568px) {
+			padding-left: 15px;
+		}
+
+		@media screen and (max-width: 768px) {
 			padding-left: 15px;
 		}
 }
