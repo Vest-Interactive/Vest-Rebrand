@@ -4,6 +4,10 @@ article {
 }
 
 .about-page {
+	img {
+		width: 100%;
+	}
+
 	.copy-block {
 		max-width: 768px;
 		margin: 0 auto;
@@ -24,12 +28,17 @@ article {
 		.service-header-table { z-index: 2;}
 	}
 
+
+
 	.our-story {
 		padding: 40px 0;
 	}
 	.our-niche {
 		overflow: hidden;
 		padding-bottom: 40px;
+		p {
+			padding: 0 15px;
+		}
 	}
 
 	ul {
@@ -45,6 +54,12 @@ article {
                 width: 80%;
                 font-size: 22px;
                 line-height: 32px;
+
+                @media screen and (max-width: 768px) {
+                	padding: 15px;
+            	    padding-left: 55px;
+            	    width: 100%;
+                }
 			}
         
             li.honor {
@@ -143,4 +158,6 @@ article {
     	line-height: 18px;
 		}
 	}
+
+
 }

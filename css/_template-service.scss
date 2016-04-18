@@ -66,6 +66,15 @@ $prColor: #008D73;
     left: 0;
     height: $serverHeaderHeight;
     z-index: 1;
+
+    @media screen and (max-width: 768px) {
+    	blockquote, .line {
+    		display: none;
+    	}
+    	h1 {
+    		padding-top: 35px;
+    	}
+    }
 }
 
 .service-page {
