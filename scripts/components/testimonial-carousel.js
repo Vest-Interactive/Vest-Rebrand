@@ -53,7 +53,7 @@ function Testimonial($) {
 		 	 '</div>',
 		 	 '<div class="container">',
 		 	  '<div class="row slide-footer">',
-		 	    '<div class="col-md-6 col-sm-6 col-xs-6">',
+		 	    '<div class="testimonial-author col-md-6 col-sm-6 col-xs-12">',
 		 	  		,(function() {
 		 	  			if (i.author != '') {
 		 	  				return '<i class="fa fa-comment" aria-hidden="true"></i><span> &nbsp;';
@@ -62,7 +62,7 @@ function Testimonial($) {
 		 	  			}
 		 	  		})(), i.author, '</span> ',
 		 	  	'</div>',
-		 	  	'<div class="col-md-6 text-right"> <span class="slide-date">', i.association, '</span> </div>',
+		 	  	'<div class="testimonial-association col-md-6 col-sm-6 col-xs-12"> <span class="slide-date">', i.association, '</span> </div>',
 		 	  '</div>',
 		 	  '</div>',
 			 '</div>'].join('');
