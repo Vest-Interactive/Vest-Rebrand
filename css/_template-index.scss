@@ -349,6 +349,10 @@ section.main-industry-block {
 	width: 500px;
 	margin: 0 auto;
 
+	@media screen and (max-width: 450px) {
+		width: 100%;
+	}
+
 	li {
 		display: inline-block;
 		position: relative;
@@ -357,8 +361,12 @@ section.main-industry-block {
 		width: 35px;
 		border-radius: 50%;
 		border: 4px solid #dbdbdb;
-    margin-left: 26px;
-    transition: 0.3s ease-in;
+    	margin-left: 26px;
+    	transition: 0.3s ease-in;
+		@media screen and (max-width: 450px) {
+			margin-left: 4%;
+		}
+
 
     &:hover {
     	cursor: pointer;
@@ -489,6 +497,13 @@ section.main-industry-block {
     top: 60px;
     left: 16px;
 	}
+}
+
+.testimonial-author, .testimonial-association {
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
+	
 }
 
 

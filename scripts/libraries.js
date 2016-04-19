@@ -1,4 +1,4 @@
-import tooltips from './tooltips';
+//import tooltips from './tooltips';
 import photogalleries from './photogalleries';
 import ScrollReveal from 'scrollreveal';
 
@@ -8,7 +8,7 @@ function libraries($) {
 		Tooltips
 		 - Add's tool tips to specific class elements to help describe what they are doing.
 	*/
-	tooltips();
+	//tooltips();
 
 	/*
 		Photoswipe Galleries
