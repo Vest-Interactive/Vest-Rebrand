@@ -186,11 +186,13 @@ button {
 		height: 52px;
 		transition: all 0.3s ease-in-out;
 			path {
-				fill: #21648f;
+				//fill: #21648f;
+				fill: #fff;
 			}
 		&:hover {
 			path {
-				fill: #9B081B;
+				//fill: #9B081B;
+				fill: #C70D25;
 			}
 		}
 	}
@@ -454,13 +456,13 @@ header {
 	}
 
 	.fb {
-		color: #ababab;
+		color: #3b5998;
 	}
 	.li {
-		color: #ababab;
+		color: #caccce;
 	}
 	.twitter {
-		color: #ababab;
+		color: #e1e8ed;
 	}
 
 }
