@@ -64,7 +64,7 @@ function contact() {
           success: function(msg) {
             if (msg.hasOwnProperty('success')) {
               $('#name').val(''),
-			  $('#phone').val('');							
+			        $('#phone').val('');							
 							//swal("Thank you for your interest", "We will be getting back with you shortly");
             }
           }

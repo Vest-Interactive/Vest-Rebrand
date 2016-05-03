@@ -467,6 +467,23 @@ header {
 
 }
 
+.social-icons.social-nav {
+	a {
+		text-decoration: inherit;
+
+		span {
+			font-size: 24px;
+			color: #fff;
+			margin-left: 15px;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+
+}
+
 
 .block {
 	display: block;
