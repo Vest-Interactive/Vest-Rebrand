@@ -76,6 +76,15 @@ gulp.task('html',function() {
 });
 
 /*
+  AJAX
+*/
+gulp.task('ajax', function() {
+  gulp.src('ajax/*.php')
+    .pipe(gulp.dest('./build/ajax'))
+    .pipe(reload({stream:true}))
+});
+
+/*
   Browser Sync
 */
 gulp.task('browser-sync', function() {
@@ -136,7 +145,7 @@ gulp.task('scripts', function() {
 });
 
 // run 'scripts' task first, then watch for future changes
-gulp.task('default', ['images','videos', 'styles','scripts','html','browser-sync'], function() {
+gulp.task('default', ['images','videos', 'styles','scripts','html', 'ajax', 'browser-sync'], function() {
   gulp.watch('css/**/*', ['styles']); // gulp watch for stylus changes
   gulp.watch('html/**/*', ['html']);
   return buildScript('main.js', true); // browserify watch for JS changes

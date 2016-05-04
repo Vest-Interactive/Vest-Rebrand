@@ -2,9 +2,12 @@
 /**
  * AJAX :
  * author @andrew
- *  Catina Hill - chi223@uky.edu
- * 	Stephanie Damron - sdamron@arh.org
- * 	Danielle Fertig - dfertig@vestadvertising.com
+ * action: 'register',
+          name: $('#name').val(),
+          email: $('#email').val(),
+          phone: $('#phone').val(),
+          company: $('$company').val(),
+          preferance: services
   */
 
 if(isset($_POST) && isset($_POST['register'])) {
@@ -21,7 +24,7 @@ if(isset($_POST) && isset($_POST['register'])) {
 
 			$newMessage = '<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" height="35">'.
 						  '<tbody><tr>'.
-						  '<td style="font-size: 18px; font-weight: strong;">doyourlegshurt.com - Contact Request</td>'.
+						  '<td style="font-size: 18px; font-weight: strong;">Request from Vestadvertising.com</td>'.
 						  '</tr></tbody>'.
 						  '</table>'.
 						  '<table cellpadding="0" cellspacing="0" border="0" align="center" width="600">'.
@@ -30,9 +33,21 @@ if(isset($_POST) && isset($_POST['register'])) {
 						  '<td width="525">: '.$register['name'].'</td>'.
 						  '</tr>'.
 						  '<tr>'.
+						  '<td width="175"> Email  </td>'.
+						  '<td width="525">: '.$register['email'].'</td>'.
+						  '</tr>'.
+						  '<tr>'.
 						  '<td width="175"> Phone  </td>'.
 						  '<td width="525">: '.$register['phone'].'</td>'.
-						  '</tr>'.						 
+						  '</tr>'.
+						  '<tr>'.
+						  '<td width="175"> Company  </td>'.
+						  '<td width="525">: '.$register['company'].'</td>'.
+						  '</tr>'.
+						  '<tr>'.
+						  '<td width="175"> Preferance  </td>'.
+						  '<td width="525">: '.$register['preferance'].'</td>'.
+						  '</tr>'.					 
 						  '<tr>'.
 						  '<td width="175"> Created On </td>'.
 						  '<td width="525">: '.date("F j, Y, g:i a").'</td>'.
@@ -40,8 +55,8 @@ if(isset($_POST) && isset($_POST['register'])) {
 						  '</table>';
 			$headers = "MIME-Version: 1.0" . "\r\n";
 			$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-			$headers .= 'From: no-reply@doyourlegshurt.com' . "\r\n";
-			$result = mail('chi223@uky.edu, sdamron@arh.org, dfertig@vestadvertising.com, andrews@vestadvertising.com', '[doyourlegshurt.com] Contact Request', $newMessage, $headers);			
+			$headers .= 'From: no-reply@vestadvertising.com' . "\r\n";
+			$result = mail('andrews@vestadvertising.com', '[vestadvertising.com] Contact Request', $newMessage, $headers);			
 			//$result = mail('andrews@vestadvertising.com, michellec@vestadvertising.com, dfertig@vestadvertising.com', '[doyourlegshurt.com] Contact Request', $newMessage, $headers);			
 
 			if($result) {

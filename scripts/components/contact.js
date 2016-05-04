@@ -1,6 +1,7 @@
 
 import $ from 'jquery';
 import validate from 'jquery-validation';
+import swal from 'sweetalert';
 
 
 function contact() {
@@ -44,11 +45,9 @@ function contact() {
           name: $('#name').val(),
           email: $('#email').val(),
           phone: $('#phone').val(),
-          company: $('$company').val(),
+          company: $('#company').val(),
           preferance: services
         }
-
-
 
          //Run Ajax Call
         $.ajax({
@@ -64,8 +63,18 @@ function contact() {
           success: function(msg) {
             if (msg.hasOwnProperty('success')) {
               $('#name').val(''),
-			  $('#phone').val('');							
-							//swal("Thank you for your interest", "We will be getting back with you shortly");
+              $('#phone').val('');
+              $('#email').val('');
+              $('#company').val(''); 
+
+              if(pref.length >= 1) {
+                for (var i=0; i<pref.length; i++) {
+                  var p = $(pref[i]);
+                  p.attr('checked', false);
+                }
+              }
+
+              swal("Thank you for your interest", "We will be getting back with you shortly");
             }
           }
         });

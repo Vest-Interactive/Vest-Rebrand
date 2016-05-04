@@ -476,7 +476,12 @@ section.main-industry-block {
 
 
 
-
+.copy-write-footer {
+	font-family: "Avenir LT Std 35 Light";
+	color: #fff;
+	font-size: 0.8em;
+	margin-top: 25px;
+}
 
 
 /////////////////////// Generic
@@ -497,6 +502,10 @@ section.main-industry-block {
     top: 60px;
     left: 16px;
 	}
+}
+
+.testimonial-association {
+	text-align: right;
 }
 
 .testimonial-author, .testimonial-association {

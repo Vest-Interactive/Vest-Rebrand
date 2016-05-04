@@ -37,7 +37,9 @@ article {
 		overflow: hidden;
 		padding-bottom: 40px;
 		p {
-			padding: 0 15px;
+			@media screen and (max-width: 768px) {
+				padding: 0 15px;	
+			}
 		}
 	}
 
