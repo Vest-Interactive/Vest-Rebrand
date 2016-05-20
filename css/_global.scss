@@ -91,7 +91,6 @@ a { text-decoration: none; }
 .testimonial-carousel {
 	background-color: #f3f3f3;
 	min-height: 328px;
-	
 
 	.slide {
 		font-size: 21px;
@@ -114,15 +113,18 @@ a { text-decoration: none; }
 		margin-top: 70px;
 		text-align: center;
 		font-size: 16px;
-		//padding-bottom: 30px;
-	}
+        padding: 25px 0;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;  
+//        background: url(../images/_icons/quote.svg) no-repeat center left;
+    }
 
 	.container {
 		margin-bottom: 30px;
 	}
 
 	.slide-footer {
-		margin-top: 60px;
+		margin-top: 20px;
 
 		a, .slide-date {
 			border-bottom: none;
