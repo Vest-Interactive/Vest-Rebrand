@@ -146,3 +146,32 @@
 		color: inherit;
 	}
 }
+
+//service landing pages
+
+.service-landing {
+    section {
+        h1 {
+            font-size: 39px;
+            letter-spacing: 0;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            font-weight: 100;
+            font-family: 'Avenir LT Std 55 Roman';
+        }
+        .copy-block {
+			max-width: 760px;
+			padding: 0 10px;
+			margin: 50px auto;
+
+			p {
+				font-family: $secondaryFont;
+				font-size: 16px;
+				line-height: 32px;
+				color: $copyColor;
+				margin: 60px 20px;
+			}
+		}
+    }
+}

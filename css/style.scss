@@ -306,6 +306,11 @@ header {
 			color: #fff;
 		}
 	}
+    
+    .innerliner {
+        display: inline-block;
+        margin: 20px 60px 10px 20px;
+    }
 
 
 	.new-employee-block {
@@ -456,7 +461,7 @@ header {
 	}
 
 	.fb {
-		color: #3b5998;
+		color: #e1e8ed;
 	}
 	.li {
 		color: #caccce;
