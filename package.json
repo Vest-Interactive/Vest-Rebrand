@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "deploy": "surge -d vest-case-study.surge.sh -p build/"
+    "deploy": "surge -d vest.surge.sh -p build/"
   },
   "author": "",
   "license": "ISC",
@@ -42,6 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vest-Interactive/site-vest-2016.git"
+    "url": "https://github.com/Vest-Interactive/Vest-Rebrand.git"
   }
 }
