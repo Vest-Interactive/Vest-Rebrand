@@ -2,24 +2,57 @@
 /**
  *	Site Wide Colors and Elements.
  **/
-$i-blue: #21648f;
-$d-orange: #d67d00;
-$p-green: #288d72;
-$v-purple: #561085;
 
+/** old branding colors **/
+//$i-blue: #21648f;
+//$d-orange: #d67d00;
+//$p-green: #288d72;
+//$v-purple: #561085;
+//
+//$red: #bb051b;
+//$white: #fff;
+//
+//$btn-green : #8faf5f;
+//$btn-orange: #f38630;
+//$btn-blue: #20648e;
+//$btn-purple: #551289;
+//$btn-green: #298d73;
+//
+//$bg-blue: #4e6385;
+//$bg-red: #c80e25;
+//$bg-navyblue: #191E23;
 
-$red: #bb051b;
+/**
+    replacement colors for 2016
+**/
+$i-blue: #521cd4;
+$d-orange: #521cd4;
+$p-green: #e91853;
+$v-purple: #521cd4;
+
+$red: #e91853;
 $white: #fff;
 
-$btn-green : #8faf5f;
-$btn-orange: #f38630;
-$btn-blue: #20648e;
-$btn-purple: #551289;
-$btn-green: #298d73;
+$btn-green : #e91853;
+$btn-orange: #521cd4;
+$btn-blue: #521cd4;
+$btn-purple: #521cd4;
+$btn-green: #521cd4;
+$btn-violet: #521cd4;
 
-$bg-blue: #4e6385;
-$bg-red: #c80e25;
-$bg-navyblue: #191E23;
+$bg-blue: #521cd4;
+$bg-red: #e91853;
+$bg-navyblue: #521cd4;
+
+/**
+    new branding colors for 2016
+**/
+$white: #fff;
+$lightgray: #f0f0ec;
+$mediumgray: #b4b0a2;
+$darkgray: #1a1a10;
+$violet: #521cd4;
+$magenta: #e91853;
 
 .i-blue { color: $i-blue; }
 .d-orange { color: $d-orange; }
@@ -27,7 +60,7 @@ $bg-navyblue: #191E23;
 .v-purple { color: $v-purple; }
 
 .btn-green {
-	background-color: $btn-green;
+	background-color: #e91853;
 	color: #fff;
 }
 .btn-orange {
@@ -43,22 +76,23 @@ $bg-navyblue: #191E23;
 	color: #fff;
 }
 .btn-green {
-	background-color: $btn-green;
+	background-color: #e91853;
+	color: #fff;
+}
+.btn-violet {
+	background-color: $btn-violet;
 	color: #fff;
 }
 
 .red { color: $red; }
 .white { color: $white; }
 
-
 .blue-bg {
-	background-color: $bg-blue;
+	background-color: $lightgray;
 }
 
-
-
 .bg-texture-1 {
-	background: $bg-navyblue url('../images/textures/binding-dark.png');
+//	background: $lightgray url('../images/textures/binding-dark.png');
 }
 
 
@@ -89,12 +123,11 @@ a { text-decoration: none; }
 
 // Footer Twitter Carousel
 .testimonial-carousel {
-	background-color: #f3f3f3;
+	background-color: #b4b0a2;
 	min-height: 328px;
 
 	.slide {
-		font-size: 21px;
-		color: #5b5b5b;
+		color: #fff;
 		line-height: 30px;
 		outline: none;
 		.container {
@@ -108,12 +141,12 @@ a { text-decoration: none; }
 		}
 
 	}
-
 	.slide-text {
 		margin-top: 70px;
 		text-align: center;
-		font-size: 16px;
+		font: 300 normal 14pt/1.4em "Source Sans Pro", san-serif;
         padding: 25px 0;
+        color: #fff;
         border-top: 1px solid #dfdfdf;
         border-bottom: 1px solid #dfdfdf;  
 //        background: url(../images/_icons/quote.svg) no-repeat center left;
@@ -128,10 +161,7 @@ a { text-decoration: none; }
 
 		a, .slide-date {
 			border-bottom: none;
-			font-size: 15px;
-			font-weight: 700;
-			//padding-bottom: 5px;
-			line-height: 21px;
+			font: 900 normal 16pt/1.4em "Source Sans Pro", san-serif;
 			height: 30px;
 	    display: inline-block;
 	    vertical-align: middle;
