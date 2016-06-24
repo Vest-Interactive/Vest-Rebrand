@@ -18,6 +18,7 @@
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
           max-width: 280px;
           padding-left:0px;
+          .index-caption { padding-left:10px; }
         }
     }
 	.index-caption p {
@@ -39,7 +40,8 @@
 		font-size: 50px;
 		font-size: 5vw;
 		text-align: left;
-
+        position:relative;
+        z-index: 2;
          @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
              font-size: 145%;
         }
@@ -95,7 +97,7 @@ a.borderbutton.widebutton:hover {
     color: #fff;
 }
 a.borderbutton.fixedbutton {
-    width: 30%;
+    width: 33%;
     margin-top: 15px;
     color: #e91853;
 }
@@ -110,7 +112,7 @@ a.scorebutton {
     position: relative;
     z-index: 2;
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        padding:0 8px;
+        padding:0 8px 0 5px;
         border-right: 1px solid #b4b0a2;
         font-size: 18px !important;
         line-height: 18px !important;
@@ -393,7 +395,7 @@ section.main-industry-block {
     }
     li.active {
         background-color: #521cd4;
-        background: -webkit-linear-gradient(top, #521cd4 0%, #331283 100%);
+//        background: -webkit-linear-gradient(top, #521cd4 0%, #331283 100%);
         span {
             color: #fff;
         }
