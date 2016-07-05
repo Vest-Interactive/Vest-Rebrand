@@ -188,10 +188,9 @@ button {
     overflow: hidden;
     clear: both;
     padding-top: 25px;
-    a svg {
-        margin-left: 15px;
+    a {
         display: inline-block;
-        width: 52px;
+        width: 24px;
         height: 52px;
         transition: all 0.3s ease-in-out;
         path {
