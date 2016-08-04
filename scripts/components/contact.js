@@ -74,6 +74,8 @@ function contact() {
                 }
               }
 
+              fbq('track', 'Lead');
+              
               swal("Thank you for your interest", "We will be getting back with you shortly");
             }
           }
