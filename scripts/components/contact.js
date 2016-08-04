@@ -75,6 +75,7 @@ function contact() {
               }
 
               fbq('track', 'Lead');
+              ga('send', 'event', 'Contact-Form', 'Submit', 'Request-a-quote');
               
               swal("Thank you for your interest", "We will be getting back with you shortly");
             }
