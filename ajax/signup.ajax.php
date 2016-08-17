@@ -61,7 +61,7 @@ if(isset($_POST) && isset($_POST['register'])) {
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         $headers .= 'From: no-reply@vestadvertising.com' . "\r\n";
-        $result = mail('lorab@vestadvertising.com', '[vestadvertising.com] Contact Request', $newMessage, $headers);
+        $result = mail('hello@vestadvertising.com', '[vestadvertising.com] Contact Request', $newMessage, $headers);
 
         if($result) {
             echo json_encode(array( "success" => 1, "code" => 1));
